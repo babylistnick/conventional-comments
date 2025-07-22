@@ -19,7 +19,9 @@ const TARGET_TEXTAREA_SELECTORS = [
     // --- New GitHub code review experience selectors ---
     'textarea.prc-Textarea-TextArea-13q4j',                 // New experience: main textarea class
     'textarea[aria-label="Markdown value"]',               // New experience: robust selector by aria-label
-    'textarea[aria-describedby$="-description"]'           // New experience: robust selector by aria-describedby suffix
+    'textarea[aria-describedby$="-description"]',           // New experience: robust selector by aria-describedby suffix
+    // Graphite Selectors
+    'textarea[class*="TextArea_textAreaInput"]'
 ];
 
 // Combine selectors with :not(.cc-toolbar-added) for querying unprocessed textareas
