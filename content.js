@@ -21,7 +21,9 @@ const TARGET_TEXTAREA_SELECTORS = [
     'textarea[aria-label="Markdown value"]',               // New experience: robust selector by aria-label
     'textarea[aria-describedby$="-description"]',           // New experience: robust selector by aria-describedby suffix
     // Graphite Selectors
-    'textarea[class*="TextArea_textAreaInput"]'
+    '[class*="DiscussionSection"] textarea[class*="TextArea_textAreaInput"]',
+    '[class*="ThreadComment"] textarea[class*="TextArea_textAreaInput"]',
+    '[class*="ReviewBar"] textarea[class*="TextArea_textAreaInput"]'
 ];
 
 // Combine selectors with :not(.cc-toolbar-added) for querying unprocessed textareas
